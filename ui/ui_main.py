@@ -194,9 +194,6 @@ class MIO3UV_PT_symmetry(Mio3UVPanel):
         icons = preview_collections["icons"]
         layout = self.layout
         row = layout.row(align=True)
-        row.scale_y = 1
-        row.prop(context.scene.mio3uv, "symmetry_center", expand=True)
-        row = layout.row(align=True)
         row.scale_y = 1.2
         row.operator("uv.mio3_symmetrize", icon_value=icons["SYMMETRIZE"].icon_id)
         row.operator("uv.mio3_symmetry_snap", icon_value=icons["SNAP"].icon_id)
